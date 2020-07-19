@@ -1,7 +1,6 @@
-import TransactionsRepository, {
-  Balance,
-} from '../repositories/TransactionsRepository';
+import TransactionsRepository from '../repositories/TransactionsRepository';
 import Transaction from '../models/Transaction';
+import Balance from '../models/Balance';
 
 interface ListTransactions {
   transactions: Transaction[];

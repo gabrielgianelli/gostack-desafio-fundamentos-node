@@ -1,15 +1,10 @@
 import Transaction from '../models/Transaction';
+import Balance from '../models/Balance';
 
 interface CreateTransactionDTO {
   title: string;
   value: number;
   type: 'income' | 'outcome';
-}
-
-export interface Balance {
-  income: number;
-  outcome: number;
-  total: number;
 }
 
 class TransactionsRepository {
